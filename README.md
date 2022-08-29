@@ -1,51 +1,13 @@
-# 🖌 React JSON Editor
+## Running React on Repl.it
 
-![CI/CD](https://github.com/sujinleeme/react-json-editor/actions/workflows/master_deploy.yml/badge.svg)
-[![Codecov](https://img.shields.io/codecov/c/github/sujinleeme/react-json-editor)](https://codecov.io/gh/sujinleeme/react-json-editor)
-![License](https://img.shields.io/github/license/sujinleeme/react-json-editor)
+[React](https://reactjs.org/) is a popular JavaScript library for building user interfaces.
 
-![alt text](./demo.png "demo")
+[Vite](https://vitejs.dev/) is a blazing fast frontend build tool that includes features like Hot Module Reloading (HMR), optimized builds, and TypeScript support out of the box.
 
-- Download / Upload JSON file
-- JSON formatter: Minify, Prettify, Fix JSON content
-- JSON Schema Validation
+Using the two in conjunction is one of the fastest ways to build a web app.
 
-## Built with
+### Getting Started
+- Hit run
+- Edit [App.tsx](#src/App.tsx) and watch it live update!
 
-- [create-react-app](https://reactjs.org/docs/create-a-new-react-app.html)
-- [monaco-react](https://github.com/suren-atoyan/monaco-react)
-- [fluentui-react](https://github.com/microsoft/fluentui)
-- [dirty-json](https://github.com/RyanMarcus/dirty-json)
-
-## Demo
-
-Visit : https://sujinleeme.github.io/react-json-editor/
-
-## Installation
-
-Git clone this repo and run `yarn && yarn start`.
-
-## Current Monaco Editor's Problems
-
-### Testing
-
-As the initialization process is supposed to load some scripts from CDN, there is a problem with Jest (and other testing tools). It only shows "Loading..." and never gets the editor working in the test.
-
-See : https://github.com/suren-atoyan/monaco-react/issues/88
-
-### Error-Message-Bar
-
-`OnValidate`
-
-In this web, there are multiple editor components and one of them has broken input, only onValidate of the last component is executed and it has the other component's markers values. The absence of the API for live model makers makes it harder to provide an alternative approach.
-
-See: https://github.com/suren-atoyan/monaco-react/issues/182
-
-## TODO
-
-- Form integration
-- Toast notification message
-
-## License
-
-MIT (2020)
+By default, Replit runs the `dev` script, but you can configure it by changing the `run` field in the [configuration file](#.replit). Here are the vite docs for [serving production websites](https://vitejs.dev/guide/build.html)
